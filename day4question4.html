@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>calculator</title>
+    <script>
+        var a = parseInt(prompt('enter your first number'));
+        var c =prompt('enter your operator lke + ,-, *,  % ,/,Math.sqrt(),Math.percent() ');
+        var b = parseInt(prompt('enter your second number'));
+        switch (c) {
+            case ('+'):
+                c = a + b;
+                document.write('your answer is :' + c);
+                break;
+            case ('-'):
+                c = a - b;
+                document.write('your answer is :' + c);
+                break;
+            case ('*'):
+                c = a * b;
+                document.write('your answer is :' + c);
+                break;
+            case ('/'):
+                c = a / b;
+                document.write('your answer is :' + c);
+                break;
+            case ('%'):
+                c = a % b;
+                document.write('your answer is :' + c);
+                break;
+            case ('Math.sqrt()'):
+                c = Math.sqrt(a);
+                document.write('your answer is :' + c);
+                break;
+            case ('Math.percent()'):
+                c = Math.floor(a/b*100);
+                document.write('your answer is :' + c +"percentage");
+                break;
+            default:
+                document.write("you enter incorrect operator")
+        }
+
+    </script>
+</head>
+<body>
+    <h1>calculator</h1>
+</body>
+</html>

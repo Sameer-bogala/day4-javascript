@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>questionno7</title><script>
+
+       
+
+    </script>
+</head>
+<body>
+    <h1> question7</h1>
+    let n = parseInt(prompt('input your number'));
+    nextPrime:
+    for (let i = 2; i <= n; i++) {
+
+    for (let j = 2; j < i; j++) {
+    if (i % j == 0) continue nextPrime;
+    }
+    alert(i);
+    console.log(i);
+    }
+</body>
+</html>
