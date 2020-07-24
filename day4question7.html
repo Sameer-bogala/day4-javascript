@@ -5,7 +5,16 @@
     <meta charset="utf-8" />
     <title>questionno7</title><script>
 
-       
+        let n = parseInt(prompt('input your number'));
+        nextPrime:
+        for (let i = 2; i <= n; i++) {
+
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue nextPrime;
+            }
+            alert("pressok to get the another number" +ii);
+            console.log("the result is" + i);
+        }
 
     </script>
 </head>
